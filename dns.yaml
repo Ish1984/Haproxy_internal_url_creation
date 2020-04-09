@@ -1,0 +1,650 @@
+#Regions for which this is global DNS/Ingress controller
+regions:
+  - qa
+  - edc
+  - ndc
+  - uk
+  - ukdr
+allapps:
+  - dashboard
+  - kapi
+  - management
+  - meson
+  - weave
+  - quark
+  - taxon
+  - boson
+  - zalenium
+#Format:
+#region:
+#  cluster:
+#    namespace:
+#      - Application1 with DNS/URL
+#      - Application1 with DNS/URL
+#      - kapi:
+#        - API application1
+#        - API application2
+
+edc:
+  usuat2:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - ccapi
+    - minio
+    - boson
+  usauthbeta:
+    cardcontrols:
+      - kapi
+      - cardcontrols
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+    installments:
+      - kapi
+      - installments
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+  usuattools:
+    - alertmanager
+    - management
+    - dashboard
+    - weave
+    - prometheus
+    - influxdb
+    - prometheusserver
+    - jenkins
+  uscommskafkauat:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  usuattoken:
+    - kapi
+    - management
+    - dashboard
+    - weave
+  usuatorca:
+    - kapi
+    - management
+    - dashboard
+    - weave
+    - beta
+    - orca
+    - cardguard
+    - kapiorca
+  usuatcardguard:
+    - kapi
+    - management
+    - dashboard
+    - weave
+    - beta
+  usuatpsa:
+    - kapi
+    - kweb
+    - hkapi
+    - hkweb
+    - management
+    - dashboard
+    - weave
+  usuathsm:
+    - kapi
+    - management
+    - dashboard
+    - weave
+  beta:
+    - kapi
+    - meson
+    - quark
+    - taxon
+    - management
+    - dashboard
+    - weave
+  edcperf:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - influxdb
+  uatperf1:
+    - kapi
+    - taxon
+  edcuat:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - ccapi
+    - minio
+    - boson
+  edcbeta:
+    - quark
+    - taxon
+    - boson
+    - minio
+    - meson
+    - axino
+    - testharness
+  betahsm:
+    - kapi
+    - management
+    - dashboard
+    - weave
+  edcccuat:
+    - ccapi
+    - management
+    - meson
+    - dashboard
+    - weave
+  edcutils:
+    - weave
+    - management
+    - dashboard
+  drndcprod:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - ccapi
+  kafka1:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  kafka2:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  kafkaperf:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  kafkaauthbeta:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  kafkaauthuat:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2  
+  sysmoduat1:
+    - kapi
+    - management
+  sysmoduat2:
+    - kapi
+    - management
+  usauthuat1:
+    - kapi
+    - installments
+    - cardcontrols
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - minio
+    - boson
+  usauthuat2:
+    - kapi
+    - installments
+    - cardcontrols
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - minio
+    - boson
+  usalpha:
+    usalpha:
+      - kapi
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+      - boson
+    authalpha:
+      - kapi
+      - installments
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+      - boson
+ndc:
+  ndcprod1:
+    - taxon
+    - quark
+    - deweb
+  ndcprod2:
+    - taxon
+    - quark
+    - boson
+    - deweb
+  ndcprod3:
+    - taxon
+    - quark
+    - boson
+    - deweb
+  ndcccprod1:
+    - kapi
+    - management
+    - weave
+    - dashboard
+  ndcccprod1:
+    ccprod:
+      - kapi
+      - management
+      - weave
+      - dashboard
+  ndcccprod2:
+    ccprod:
+      - kapi
+      - management
+      - weave
+      - dashboard
+  usprodcardguard:
+    - kapi
+    - management
+    - weave
+    - dashboard
+  usprodtoken:
+    - kapi
+    - management
+    - weave
+    - dashboard
+  usprodpsa:
+    - kapi
+    - kweb
+    - management
+    - weave
+    - dashboard
+  uskafkaprod:
+    - kafka0
+    - kafka1
+    - kafka2
+    - kafka3
+    - kafka4
+    - zoo0
+    - zoo1
+    - zoo2
+  usauthkafkauat:
+    - kafka0
+    - kafka1
+    - kafka2
+    - kafka3
+    - kafka4
+    - zoo0
+    - zoo1
+    - zoo2
+  ndcauth1:
+    - kapi
+    - management
+    - dashboard
+  ndcauth2:
+    - kapi
+    - management
+    - dashboard
+  sysmodprod1:
+    - kapi
+    - management
+    - dashboard
+  sysmodprod2:
+    - kapi
+    - management
+    - dashboard
+  ndcprodtools:
+    - kapi
+    - management
+    - alertmanager
+    - dashboard
+    - influxdb
+  uscommskafkaprod:
+    - kafka0
+    - kafka1
+    - kafka2
+    - kafka3
+    - kafka4
+    - zoo0
+    - zoo1
+    - zoo2
+
+qa:
+  qak8sloyalty:
+    loyalty:
+      - kapi
+      - lux
+      - loyaltyadmin
+      - loyaltyagent
+      - mx
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+  qak8spsa:
+    osp:
+      - kapi
+      - kweb
+      - management
+      - dashboard
+      - weave
+  qak8shsm:
+    hsm:
+      - kapi
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+  qak8sgold:
+    usgold:
+      - kapi
+      - taxon
+      - quark
+      - management
+      - meson
+      - dashboard
+      - weave
+      - minio
+      - boson
+    ukgold:
+      - kapi
+      - taxon
+      - quark
+      - management
+      - meson
+      - dashboard
+      - weave
+      - minio
+    zalenium:
+      - zalenium
+  ussretoolsqa1:
+    sre:
+      - kapi
+      - weave
+      - management
+  ussretoolsqa2:
+    sre:
+      - kapi
+      - weave
+      - management
+  usonpremtoolsqa1:
+    sre:
+      - kapi
+      - weave
+      - management
+  usonpremtoolsqa2:
+    sre:
+      - kapi
+      - weave
+      - management
+  k8skafka:
+    kafka:
+      - kafka0
+      - kafka1
+      - kafka2
+      - zoo0
+      - zoo1
+      - zoo2
+uk:
+  ukedcbeta:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - weave
+    - dashboard
+  ukcommskafkauat:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  ukedcuat:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - weave
+    - dashboard
+  ukedc2uat:
+    - quark
+    - taxon
+  ukuatcardguard:
+    - kapi
+    - management
+    - weave
+    - dashboard
+    - beta
+  ukprodcardguard:
+    - kapi
+    - management
+    - weave
+    - dashboard
+    - beta
+  ukprod1:
+    - kapi
+    - quark
+    - taxon
+    - boson
+    - management
+    - weave
+    - dashboard
+  ukprod2:
+    - quark
+    - taxon
+    - boson
+  ukauthprod1:
+    - kapi
+    - quark
+    - taxon
+    - boson
+    - management
+    - weave
+    - dashboard
+  ukauthprod2:
+    - kapi
+    - quark
+    - taxon
+    - boson
+    - management
+    - weave
+    - dashboard
+  ukdpperf:
+    - kapi
+    - management
+    - weave
+    - dashboard
+    - datapipeline
+  ukprodkafka:
+    - kafka0
+    - kafka1
+    - kafka2
+    - kafka3
+    - kafka4
+    - zoo0
+    - zoo1
+    - zoo2
+  ukcommskafkaprod:
+    - kafka0
+    - kafka1
+    - kafka2
+    - kafka3
+    - kafka4
+    - zoo0
+    - zoo1
+    - zoo2
+  uktoolsprod:
+    - alertmanager
+    - management
+    - dashboard
+    - weave
+    - prometheus
+    - influxdb
+  ukcommsperf:
+    - quark
+    - taxon
+  kafkabeta:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  kafkauat:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  ukauthkafkauat:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  ukauthkafkaprod:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  ukauthkafkaeventsprod:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  ukauthkafkabeta:
+    - kafka0
+    - kafka1
+    - kafka2
+    - zoo0
+    - zoo1
+    - zoo2
+  ukauthbeta:
+    cardcontrols:
+      - kapi
+      - cardcontrols
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+    installments:
+      - kapi
+      - installments
+      - taxon
+      - quark
+      - management
+      - dashboard
+      - weave
+  ukauthuat1:
+    - kapi
+    - installments
+    - cardcontrols
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - minio
+    - boson
+  ukauthuat2:
+    - kapi
+    - installments
+    - cardcontrols
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - minio
+    - boson
+  aricuat:
+    - events
+    - ui
+  aricbeta:
+    - events
+    - ui
+  aricprod:
+    - events
+    - ui
+  uksysmoduat1:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - minio
+    - boson
+  uksysmoduat2:
+    - kapi
+    - quark
+    - taxon
+    - management
+    - meson
+    - dashboard
+    - weave
+    - minio
+    - boson
+  ukuattools:
+    - alertmanager
+    - management
+    - dashboard
+    - weave
+    - prometheus
+    - influxdb
+ukdr:
+  ukdrk8s:
+    - kapi
+    - taxon
+    - quark
